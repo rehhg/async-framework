@@ -5,8 +5,9 @@ from async_frmw.exceptions import HTTPNotFound
 
 
 async def on_startup(app):
-    # you may query here actual db, but for an example let's just use simple set.
-    app.db = {'john_doe',}
+    # you may query here actual db,
+    # but for an example let's just use simple set.
+    app.db = {'john_doe', }
 
 
 async def log_middleware(request, handler):

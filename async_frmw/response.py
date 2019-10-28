@@ -45,7 +45,8 @@ class Response:
         self._headers[key] = value
 
     def __str__(self):
-        """We will use this in our handlers, it is actually generation of raw HTTP response,
+        """We will use this in our handlers,
+        it is actually generation of raw HTTP response,
         that will be passed to our TCP transport
         """
         status_msg, _ = web_responses.get(self._status)

@@ -6,12 +6,19 @@ from yarl import URL
 class Request:
     _encoding = 'utf_8'
 
-    def __init__(self, method, url, headers, version=None, body=None, app=None):
+    def __init__(self,
+                 method,
+                 url,
+                 headers,
+                 version=None,
+                 body=None,
+                 app=None):
         self._version = version
         self._method = method.decode(self._encoding)
         self._url = URL(url.decode(self._encoding))
         self._headers = headers
         self._body = body
+        self._app = app
 
     @property
     def method(self):

@@ -89,7 +89,7 @@ def run_app(app, host="127.0.0.1", port=8080, loop=None):
             signal.SIGTERM, lambda: asyncio.ensure_future(app.shutdown())
         )
     except NotImplementedError:
-        pass  # Ignore if not implemented. Means this program is running in windows.
+        pass  # Ignore if not implemented. This program is running in windows.
 
     try:
         print(f'Started server on {host}:{port}')
