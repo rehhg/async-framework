@@ -2,8 +2,8 @@ import re
 
 from functools import partialmethod
 
-from response import Response
-from exceptions import HTTPNotFound, HTTPBadRequest
+from .response import Response
+from .exceptions import HTTPNotFound, HTTPBadRequest
 
 
 class UrlDispatcher:

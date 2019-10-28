@@ -2,9 +2,9 @@ import asyncio
 
 from httptools import HttpRequestParser
 
-from request import Request
-from response import Response
-from http_parser import HttpParserMixin
+from .request import Request
+from .response import Response
+from .http_parser import HttpParserMixin
 
 
 class Server(asyncio.Protocol, HttpParserMixin):

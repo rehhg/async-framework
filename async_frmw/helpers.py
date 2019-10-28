@@ -1,6 +1,6 @@
 import traceback
 
-from response import Response
+from .response import Response
 
 server_exception_templ = """
 <div>
