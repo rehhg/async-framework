@@ -1,4 +1,4 @@
-httptools==0.0.13
+httptools==0.0.11
 idna==2.8
 multidict==4.5.2
 yarl==1.3.0
